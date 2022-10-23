@@ -165,7 +165,7 @@ static int __init gpio_driver_init(void)
 	printk("Successfully mapped in GPIO memory\n");
 	
 	// create an entry in the proc-fs
-	nes_proc = proc_create("nes-ctrl", 0666, NULL, &nes_proc_fops);
+	nes_proc = proc_create("nes_ctrl", 0666, NULL, &nes_proc_fops);
 	if (nes_proc == NULL)
 	{
 		return -1;
