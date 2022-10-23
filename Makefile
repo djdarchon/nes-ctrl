@@ -1,4 +1,4 @@
-obj-m += lll-gpio-driver.o
+obj-m += nes-ctrl.o
 
 KDIR = /lib/modules/$(shell uname -r)/build
 
